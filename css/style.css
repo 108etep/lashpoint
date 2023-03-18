@@ -1,0 +1,77 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+    list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit
+}
+.header{
+  background-color: #f0f0f0;
+  height: 100vh;
+  border-radius: 0 0 20px 20px;
+}
+
+.container{
+  max-width: 1360px;
+  margin-right: 40px;
+  margin-left: 40px;
+  margin: 0 auto;
+  
+}
+.header__menu{
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.header__number{
+  width: 166px;
+  color: rgba(84, 124, 86, 1);
+  font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.logo__nav{
+  display: flex;
+  align-items: center;
+}
+.logo__nav li:not(:last-child){
+  margin-right: 40px;
+}
+.logo__nav-item{
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 16px;
+  color:rgba(74, 69, 69, 1);
+}
+.logo{
+  width: 67px;
+  height: 64px;
+  
+}
+.header__contract{
+  font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(84, 124, 86, 1);
+}
+.header__inner-title{
+  max-width: 390px;
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 104.5%;
+  font-variant: small-caps;
+  color: #4A4545;
+}
