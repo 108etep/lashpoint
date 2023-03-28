@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,75 +9,86 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+  <link rel="stylesheet" type="text/css" href="css/slick.css" />
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
   <title>Lash Point Studio</title>
 </head>
+
 <body>
   <header class="header">
-    <div class="container">
+    <div class="header__container">
       <div class="header__menu">
         <div class="header__number"><a href="tel:+79507283952">+7 950 728 39 52</a></div>
         <div class="header__logo">
           <ul class="logo__nav">
             <li class="logo__nav-item"><a href="">Главная</a></li>
             <li class="logo__nav-item"><a href=""> Услуги</a></li>
-            <li class="logo__nav-img" ><a href="#"><img class="logo" src="images/logo.svg" alt=""></a> </li>
+            <li class="logo__nav-img"><a href="#"><img class="logo" src="images/logo.svg" alt=""></a> </li>
             <li class="logo__nav-item"><a href=""> Цены</a></li>
             <li class="logo__nav-item"><a href=""> Контакты</a></li>
           </ul>
         </div>
-        <div class="header__contract"><a href=""><p>Договор Оферты</p></a></div>
-                  <div class="hamburger__menu" onclick="myFunction(this)">
-                    <input id="menu__toggle" type="checkbox" />
-                    <label class="menu__btn" for="menu__toggle">
-                      <span></span>
-                    </label>
-                    <ul class="menu__box">
-                      <li><a class="menu__item" href="#">Главная</a></li>
-                      <li><a class="menu__item" href="#">Услуги</a></li>
-                      <li><a class="menu__item" href="#">Цены</a></li>
-                      <li><a class="menu__item" href="#">Контакты</a></li>
-                      <li><a class="menu__item menu__item-greencolor" href="#">Договор Оферты</a></li>
-                      <li><a class="menu__item menu__item-greencolor" href="tel:+79507283952">+7 950 728 39 52</a></li>
-                      <li class="menu__item-button">
-                        <form class="header__button-form" action="page/new.html" target="_blank">
-                          <button class="header__inner-button">Записаться</button>
-                        </form>
-                      </li>
-                      <ul/>
-                  </div>
+        <div class="header__contract">
+          <a href="">
+            <p>Договор Оферты</p>
+          </a>
+        </div>
+        <div class="hamburger__menu" onclick="myFunction(this)">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+        </div>
       </div>
-      <div class="header__inner">
-        <h1 class="header__inner-title">Ваша красота <br> наша работа</h1>
-        <h3 class="header__inner-desc"> Будем рады сделать Ваш взгляд более выразительным, а Вас счастливее</h3>
-      </div>
-      <div class="header__button">
-        <form class="header__button-form" action="page/new.html" target="_blank">
-          <button class="header__inner-button">Записаться</button>
-        </form>
-        <p class="lashp">Lash point studio</p>
-      </div>
-
+      <nav class="mobile__menu">
+        <ul class="menu__box">
+        <li><a class="menu__item" href="#">Главная</a></li>
+        <li><a class="menu__item" href="#">Услуги</a></li>
+        <li><a class="menu__item" href="#">Цены</a></li>
+        <li><a class="menu__item" href="#">Контакты</a></li>
+        <li><a class="menu__item menu__item-greencolor" href="#">Договор Оферты</a></li>
+        <li><a class="menu__item menu__item-greencolor" href="tel:+79507283952">+7 950 728 39 52</a></li>
+        <li class="menu__item-button">
+          <form class="header__button-form" action="page/new.html" target="_blank">
+            <button class="header__inner-button">Записаться</button>
+          </form>
+        </li>
+      </ul>
+      </nav>
+      
     </div>
   </header>
+  <section class="container hero">
+    <div class="header__inner">
+      <h1 class="header__inner-title">Ваша красота <br> наша работа</h1>
+      <h3 class="header__inner-desc"> Будем рады сделать Ваш взгляд более выразительным, а Вас счастливее</h3>
+    </div>
+    <div class="header__button">
+      <form class="header__button-form" action="page/new.html" target="_blank">
+        <button class="header__inner-button">Записаться</button>
+      </form>
+      <p class="lashp">Lash point studio</p>
+    </div>
+  </section>
   <section class="advantages">
     <div class="container">
-      <div class="advantages__item"> 
+      <div class="advantages__item">
         <div class="item__image">
           <img class="adv__img" src="images/adv-item-1.jpg" alt="Комфорт">
         </div>
         <div class="item__text">
           <h1 class="text__title">Комфорт</h1>
-          <p class="text__desc">Вы проведете время в приятной атмосфере с чашечкой кофе, при этом получите профессиональную услугу. <span>Lash point studio</span>
-          это не просто бренд, это прежде всего индивидуальный подход к каждому клиенту и забота о его комфорте</p>
+          <p class="text__desc">Вы проведете время в приятной атмосфере с чашечкой кофе, при этом получите
+            профессиональную услугу. <span>Lash point studio</span>
+            это не просто бренд, это прежде всего индивидуальный подход к каждому клиенту и забота о его комфорте</p>
         </div>
       </div>
       <div class="advantages__item advantages__item-invers">
         <div class="item__text">
           <h1 class="text__title invers">Качество</h1>
-          <p class="text__desc text-fix">Мы постоянно повышаем свой  профессионализм и используем материалы только премиум класса, для того чтобы радовать
-          вас топовыми эффектами. А так же мы предоставляем гарантию 7 дней на все наши работы</p>
+          <p class="text__desc text-fix">Мы постоянно повышаем свой профессионализм и используем материалы только
+            премиум класса, для того чтобы радовать
+            вас топовыми эффектами. А так же мы предоставляем гарантию 7 дней на все наши работы</p>
         </div>
         <div class="item__image">
           <img class="adv__img" src="images/adv-item-2.jpg" alt="Качество">
@@ -88,13 +100,14 @@
         </div>
         <div class="item__text">
           <h1 class="text__title">Результат</h1>
-          <p class="text__desc">В нашей студии вы сможете получить все возможные эффекты по наращиванию ресниц, а так же в скором времени мы планируем
-          расширение и увеличение предоставляемых нами услуг. Впервые побывав у нас Вы обязательно вернетесь снова</p>
+          <p class="text__desc">В нашей студии вы сможете получить все возможные эффекты по наращиванию ресниц, а так же
+            в скором времени мы планируем
+            расширение и увеличение предоставляемых нами услуг. Впервые побывав у нас Вы обязательно вернетесь снова</p>
         </div>
       </div>
     </div>
   </section>
- <section class="porfolio">
+  <section class="porfolio">
     <div class="container">
       <div class="porfolio__inner">
         <h1 class="portfolio__inner-title">Наши работы</h1>
@@ -119,37 +132,43 @@
       </div>
     </div>
   </section>
-<section class="reviews">
+  <section class="reviews">
     <div class="container">
       <div class="revies__title">
         <h1 class="revies__title-text">Отзывы наших клиенток</h1>
-    </div>
-    <div class="slider">
-      <div class="slider__item">
-        <h1 class="slider__item-title">Ангелина</h1>
-        <p class="slider__item-desc">Замечательный мастер, наращивала у данного мастера реснички 1,5D. Работа выполнена аккуратно, эстетично, ресницы держались очень долго</p>
       </div>
-      <div class="slider__item">
-        <h1 class="slider__item-title">Мария</h1>
-        <p class="slider__item-desc">Я в восторге, думала будет немного дискомфортно, так как делала в первый раз, но нет, все прекрасно. Ждите еще!</p>
+      <div class="slider">
+        <div class="slider__item">
+          <h1 class="slider__item-title">Ангелина</h1>
+          <p class="slider__item-desc">Замечательный мастер, наращивала у данного мастера реснички 1,5D. Работа
+            выполнена аккуратно, эстетично, ресницы держались очень долго</p>
+        </div>
+        <div class="slider__item">
+          <h1 class="slider__item-title">Мария</h1>
+          <p class="slider__item-desc">Я в восторге, думала будет немного дискомфортно, так как делала в первый раз, но
+            нет, все прекрасно. Ждите еще!</p>
+        </div>
+        <div class="slider__item">
+          <h1 class="slider__item-title">Ангелина</h1>
+          <p class="slider__item-desc">Замечательный мастер, наращивала у данного мастера реснички 1,5D. Работа
+            выполнена аккуратно, эстетично, ресницы держались очень долго</p>
+        </div>
+        <div class="slider__item">
+          <h1 class="slider__item-title">Мария</h1>
+          <p class="slider__item-desc">Я в восторге, думала будет немного дискомфортно, так как делала в первый раз, но
+            нет, все прекрасно. Ждите еще!</p>
+        </div>
+        <div class="slider__item">
+          <h1 class="slider__item-title">Ангелина</h1>
+          <p class="slider__item-desc">Замечательный мастер, наращивала у данного мастера реснички 1,5D. Работа
+            выполнена аккуратно, эстетично, ресницы держались очень долго</p>
+        </div>
+        <div class="slider__item">
+          <h1 class="slider__item-title">Мария</h1>
+          <p class="slider__item-desc">Я в восторге, думала будет немного дискомфортно, так как делала в первый раз, но
+            нет, все прекрасно. Ждите еще!</p>
+        </div>
       </div>
-      <div class="slider__item">
-        <h1 class="slider__item-title">Ангелина</h1>
-        <p class="slider__item-desc">Замечательный мастер, наращивала у данного мастера реснички 1,5D. Работа выполнена аккуратно, эстетично, ресницы держались очень долго</p>
-      </div>
-      <div class="slider__item">
-        <h1 class="slider__item-title">Мария</h1>
-        <p class="slider__item-desc">Я в восторге, думала будет немного дискомфортно, так как делала в первый раз, но нет, все прекрасно. Ждите еще!</p>
-      </div>
-      <div class="slider__item">
-        <h1 class="slider__item-title">Ангелина</h1>
-        <p class="slider__item-desc">Замечательный мастер, наращивала у данного мастера реснички 1,5D. Работа выполнена аккуратно, эстетично, ресницы держались очень долго</p>
-      </div>
-      <div class="slider__item">
-        <h1 class="slider__item-title">Мария</h1>
-        <p class="slider__item-desc">Я в восторге, думала будет немного дискомфортно, так как делала в первый раз, но нет, все прекрасно. Ждите еще!</p>
-      </div>
-    </div>
     </div>
   </section>
   <!-- <section class="price">
@@ -267,4 +286,5 @@
   <script src="js/slick.min.js"></script>
   <script src="js/main.js"></script>
 </body>
+
 </html>

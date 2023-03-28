@@ -19,29 +19,46 @@ a {
   color: inherit
 }
 .header{
-  background-color: #f0f0f0;
-  /* height: 100vh; */
-  border-radius: 0 0 60px 60px;
+
+}
+.container.hero{
   margin-bottom: 120px;
 }
+.hero {
+  background-color: #f0f0f0;
+  border-radius: 0 0 60px 60px;
 
+}
 .container{
   max-width: 1360px;
   margin-right: 40px;
   margin-left: 40px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 40px;
   
+}
+.header__container{
+  max-width: 1360px;
+  margin-right: 40px;
+  margin-left: 40px;
+  margin: 0 auto;
+  background-color: #F0F0F0;
+
 }
 .header__menu{
   padding-top: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 80px;
+  padding-bottom: 80px;
   position: relative;
   z-index: 2;
+  padding: 0 10px;
+  background-color: #F0F0F0;
+  padding-left: 40px;
+  padding-right: 40px;
 }
+
 .header__number{
   width: 166px;
   color: rgba(84, 124, 86, 1);
@@ -529,6 +546,10 @@ margin-bottom: 50px;
 .footer__copyright-text span{
   color: rgba(252, 81, 133, 1);
 }
+
+.hamburger__menu{
+  display: none;
+}
 .bg-bar {
   background-color: #010101;
 }
@@ -578,6 +599,7 @@ margin-bottom: 50px;
   height: 60%;
   margin: 0;
   padding: 80px 0;
+  z-index: 1;
   list-style: none;
   text-align: center;
   background-color: #ECEFF1;
@@ -625,6 +647,20 @@ margin-bottom: 50px;
   transform: rotate(90deg);
 }
 #menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  right: 0;
+  z-index: 1;
+  display: grid;
+  justify-items: left;
+}
+.mobile__menu.active {
+  width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+.mobile__menu.active .menu__box {
   visibility: visible;
   right: 0;
   z-index: 1;
@@ -691,6 +727,9 @@ margin-bottom: 50px;
   .header__menu{
     visibility: hidden;
   }
+  .header__contract {
+    display: none;
+  }
   .header__menu .logo__nav-img{
     visibility: visible;
     
@@ -713,6 +752,23 @@ margin-bottom: 50px;
 .slick-center {
   opacity: 1;
   transition: opacity 0.5s ease;
+}
+.hamburger__menu{
+  display: block;
+}
+.logo__container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 88px;
+  width: 90%;
+  background-color: #ECEFF1;
+   transition: transform 0.5s ease;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20px;
+  z-index: 3;
 }
 }
 @media (max-width: 1024px){
@@ -803,6 +859,9 @@ margin-bottom: 50px;
   }
   .porfolio__inner-photo {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .header__menu{
+    visibility: visible;
   }
   .porfolio__inner-photo img {
     
