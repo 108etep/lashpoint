@@ -33,6 +33,19 @@ $(document).ready(function() {
           slidesToShow: 1,
           slidesToScroll: 1,
         }
+      },
+      {
+        breakpoint: 642,
+        settings: {
+          arrows: false,
+          centerMode: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 361,
+        settings: "unslick"
       }
     ]
   });

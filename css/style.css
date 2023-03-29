@@ -925,6 +925,19 @@ margin-bottom: 50px;
   padding-bottom: 0px;
 }
 }
+@media (max-width: 642px){
+  .slick-slide {
+    opacity: inherit;
+}
+.slider__item {
+    padding-top: 25px;
+    padding-left: 30px;
+
+}
+.slider__item-desc {
+    font-size: 16px;
+}
+}
 @media (max-width: 360px){
   .container {
       padding: 0px 20px;
@@ -981,5 +994,16 @@ margin-bottom: 50px;
 .porfolio__inner-photo {
   grid-template-columns: repeat(1, 1fr);
 }
+.slider__item {
+  margin:0 auto;
+  margin-bottom: 10px;
+  padding-right: 10px;
 
+}
+.slider__item-title{
+  margin-bottom: 20px;
+}
+.slider__item-desc {
+    font-size: 20px;
+}
 }
