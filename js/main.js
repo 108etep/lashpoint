@@ -44,20 +44,10 @@ $(document).ready(function() {
         }
       },
       {
-        breakpoint: 361,
+        breakpoint: 400,
         settings: "unslick"
-      },
-      {
-        breakpoint: 412,
-        settings: {
-          arrows: false,
-          centerMode: false,
-          centerPadding: '80px',
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          variableWidth: true
-        }
       }
+      
     ]
   });
 
