@@ -101,7 +101,7 @@ a {
 }
 .header__inner-title{
   max-width: 390px;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 60px;
@@ -214,7 +214,7 @@ a {
   padding-top: 23px;
 }
 .text__title{
-  font-family: 'Playfair Display';
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 40px;
   line-height: 104.5%;
@@ -245,7 +245,7 @@ a {
   margin-bottom: 100px;
 }
 .portfolio__inner-title{
-  font-family: 'Playfair Display';
+font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 50px;
   line-height: 104.5%;
@@ -317,7 +317,7 @@ a {
 
 }
 .revies__title-text{
-font-family: 'Playfair Display';
+font-family: 'Inter', sans-serif;
 font-weight: 600;
 font-size: 50px;
 line-height: 104.5%;
@@ -360,7 +360,7 @@ margin-bottom: 50px;
   margin-bottom: 120px;
 }
 .price__title{
-  font-family: 'Playfair Display';
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 40px;
   line-height: 104.5%;
@@ -454,7 +454,7 @@ margin-bottom: 50px;
   padding-left: 45px;
 }
 .contacts__desc-title{
-  font-family: 'Playfair Display';
+  font-family: 'Inter', sans-serif;
   font-weight: 600;
   font-size: 50px;
   line-height: 104.5%;
@@ -927,6 +927,15 @@ margin-bottom: 50px;
 .item__text{
   padding-bottom: 0px;
 }
+.revies__title-text,
+.portfolio__inner-title {
+
+  text-align: center;
+}
+.slider__item{
+  width: 323px;
+  margin-right: 45px;
+}
 }
 @media (max-width: 642px){
   .slick-slide {
@@ -935,6 +944,7 @@ margin-bottom: 50px;
 .slider__item {
     padding-top: 25px;
     padding-left: 30px;
+    padding-right: 30px;
 
 }
 .slider__item-desc {
