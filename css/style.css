@@ -5,6 +5,8 @@
   margin: 0;
   padding: 0;
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap');
+
 
     list-style: none;
 }
@@ -23,6 +25,7 @@ a {
 }
 .container.hero{
   margin-bottom: 120px;
+  padding-top: 80px;
 }
 .hero {
   background-color: #f0f0f0;
@@ -983,9 +986,9 @@ margin-bottom: 50px;
   height: 100%;
 }
 .portfolio__inner-title{
-  font-size: 36px;
-  margin-left: 15%;
+  font-size: 40px;
   margin-bottom: 20px;
+  text-align: center;
 }
 .inner__photo-item-7,
 .inner__photo-item-6{
@@ -1005,5 +1008,9 @@ margin-bottom: 50px;
 }
 .slider__item-desc {
     font-size: 20px;
+}
+.revies__title-text {
+    font-size: 49px;
+    text-align: center;
 }
 }
