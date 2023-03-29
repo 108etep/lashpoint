@@ -4,12 +4,30 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap');
-
-
-    list-style: none;
+  list-style: none;
 }
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../fonts/PlayfairDisplay-Medium.ttf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Playfair Display semibold';
+  src: url('../fonts/PlayfairDisplay-SemiBold.ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Playfair Display bold';
+  src: url('../fonts/PlayfairDisplay-Bold.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
 
 button,
 button:active,
@@ -101,7 +119,7 @@ a {
 }
 .header__inner-title{
   max-width: 390px;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Playfair Display bold', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 60px;
@@ -214,7 +232,7 @@ a {
   padding-top: 23px;
 }
 .text__title{
-  font-family: 'Inter', sans-serif;
+  font-family: 'Playfair Display bold', sans-serif;
   font-weight: 700;
   font-size: 40px;
   line-height: 104.5%;
@@ -245,7 +263,7 @@ a {
   margin-bottom: 100px;
 }
 .portfolio__inner-title{
-font-family: 'Inter', sans-serif;
+  font-family: 'Playfair Display bold', sans-serif;
   font-weight: 700;
   font-size: 50px;
   line-height: 104.5%;
@@ -317,7 +335,7 @@ font-family: 'Inter', sans-serif;
 
 }
 .revies__title-text{
-font-family: 'Inter', sans-serif;
+font-family: 'Playfair Display bold', sans-serif;
 font-weight: 600;
 font-size: 50px;
 line-height: 104.5%;
@@ -360,7 +378,7 @@ margin-bottom: 50px;
   margin-bottom: 120px;
 }
 .price__title{
-  font-family: 'Inter', sans-serif;
+  font-family: 'Playfair Display bold', sans-serif;
   font-weight: 700;
   font-size: 40px;
   line-height: 104.5%;
@@ -454,7 +472,7 @@ margin-bottom: 50px;
   padding-left: 45px;
 }
 .contacts__desc-title{
-  font-family: 'Inter', sans-serif;
+  font-family: 'Playfair Display bold', sans-serif;
   font-weight: 600;
   font-size: 50px;
   line-height: 104.5%;
