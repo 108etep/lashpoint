@@ -166,7 +166,7 @@ a {
     background-position: center;
     width: 712px;
     height: 422px;
-    z-index: 2;
+    z-index: 0;
 }
 .header__button{
   display: flex;
@@ -653,7 +653,7 @@ margin-bottom: 50px;
   width: 26px;
   height: 26px;
   cursor: pointer;
-  z-index: 6;
+  z-index: 2;
 }
 /* добавляем "гамбургер" */
 .menu__btn > span,
@@ -684,7 +684,7 @@ margin-bottom: 50px;
   height: 60%;
   margin: 0;
   padding: 80px 0;
-  z-index: 1;
+  z-index: 5;
   list-style: none;
   text-align: center;
   background-color: #ECEFF1;
@@ -734,7 +734,7 @@ margin-bottom: 50px;
 #menu__toggle:checked ~ .menu__box {
   visibility: visible;
   right: 0;
-  z-index: 1;
+  z-index: 6;
   display: grid;
   justify-items: left;
 }
@@ -849,6 +849,7 @@ margin-bottom: 50px;
   }
   .menu__box {
     height: 68.5%;
+    z-index: 5;
   }
     .slick-slide {
   opacity: 0.5;
@@ -1022,10 +1023,14 @@ margin-bottom: 50px;
     .advantages {
       margin-bottom: 60px;
     }
+
 }
 @media (max-width: 808px){
   .header__inner-desc::before {
       display: none;
+    }
+    .header__inner-title{
+      z-index: 0;
     }
 }
 @media (max-width: 768px){
