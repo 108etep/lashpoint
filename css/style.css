@@ -554,13 +554,63 @@ margin-bottom: 50px;
   border-top-right-radius:30px
 }
 .footer__number{
-  margin-left: 40px;
+  width: 166px;
+  color: rgba(84, 124, 86, 1);
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: capitalize;
 }
 .footer__contract{
   margin-right: 40px;
 }
 .footer__menu{
   margin-bottom: 0px ;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 80px;
+  position: relative;
+  z-index: 2;
+  padding: 0 10px;
+  background-color: #F0F0F0;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+}
+.footer__nav{
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.footer__nav li:not(:last-child) {
+  margin-right: 60px;
+}
+.footer__nav-item {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 16px;
+  color: rgba(74, 69, 69, 1);
+}
+
+.footer__nav-item:hover a {
+  color: rgba(84, 124, 86, 1);
+  transition: all .3s;
+}
+.footer__contract{
+  font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(84, 124, 86, 1);
+}
+.logo {
+  width: 67px;
+  height: 64px;
+
 }
 .footer__copyright{
   background-color: #091D3C;
@@ -748,7 +798,15 @@ margin-bottom: 50px;
   .slick-prev {
     left: 30%!important;
   }
-
+  .footer__menu{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+  }
+  .footer__number,
+  .footer__contract{
+    white-space: nowrap;
+  }
     
 }
 
@@ -757,10 +815,14 @@ margin-bottom: 50px;
   .lashp {
       visibility: hidden;
     }
-        .contacts__desc-title {
-          white-space: nowrap;
-          padding-right: 27px;
-        }
+  .contacts__desc-title {
+    white-space: nowrap;
+    padding-right: 27px;
+  }
+  .footer__menu{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 @media (max-width: 1060px){
   .menu__btn {
@@ -821,7 +883,9 @@ margin-bottom: 50px;
 }
 .price__desc{
   width: 100%;
+
 }
+
 }
 @media (max-width: 1024px){
   .menu__box{
@@ -884,38 +948,52 @@ margin-bottom: 50px;
   text-align: center;
   padding-right: 27px;
 }
+.footer__container{
+  padding: 0;
+}
 }
 
 @media (max-width: 1000px){
   .header__inner-desc::before {
     left: 110px;
-}
+  }
 }
 @media (max-width: 996px){
   .lashp {
       visibility:visible;
     }
-        .contacts__inner {
-          display: grid;
-          grid-template-columns: repeat(1, 1fr);
-          
-        }
-    
-        .contacts__map {
-          grid-row: 1 / 2;
-          padding: 30px 30px 40px 30px;
-        }
-    
-        .contacts__line {
-          grid-row: 2 / 3;
-          display: none;
-        }
-    
-        .contacts__desc {
-          margin-top: 0;
-          margin-right: 0;
-          grid-row: 3 / 4;
-        }
+  .contacts__inner {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  } 
+  .contacts__map {
+    grid-row: 1 / 2;
+    padding: 30px 30px 40px 30px;
+  }
+  .contacts__line {
+    grid-row: 2 / 3;
+    display: none;
+  }
+  .contacts__desc {
+    margin-top: 0;
+    margin-right: 0;
+    grid-row: 3 / 4;
+  }
+  .footer__nav-item{
+    display: none;
+  }
+  .footer__number:nth-child(1) {
+    order: 2;
+  }            
+  .footer__contract:nth-child(3) {
+    order: 2;
+  }
+  .footer__menu{
+    justify-content: flex-start;
+  }
+  .footer__contract{
+    margin-left: auto;
+  }
 }
 @media (max-width: 924px){
   .header__inner-desc::before {
@@ -945,10 +1023,13 @@ margin-bottom: 50px;
       margin-bottom: 60px;
     }
 }
+@media (max-width: 808px){
+  .header__inner-desc::before {
+      display: none;
+    }
+}
 @media (max-width: 768px){
-  .header__inner-desc::before{
-    display: none;
-  }
+
   .porfolio__inner-photo {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1059,6 +1140,10 @@ margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
 }
+.footer__copyright-text{
+  text-align: center;
+  padding: 15px 20px;
+}
 }
 @media (max-width: 642px){
   .slick-slide {
@@ -1072,6 +1157,21 @@ margin-bottom: 50px;
 }
 .slider__item-desc {
     font-size: 16px;
+}
+.footer__menu{
+  flex-direction: column;
+}
+.footer__contract,
+.footer__number,
+.footer__logo{
+  margin: 0 auto;
+}
+.footer__nav{
+  width: 68px;
+}
+.footer__logo,
+.footer__number{
+  margin-bottom: 10px;
 }
 }
 @media (max-width: 400px){
@@ -1183,5 +1283,12 @@ margin-bottom: 50px;
 .price__inner{
   display: grid;
   justify-content: center;
+}
+.footer__container{
+  padding: 0;
+}
+.footer__inner{
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
 }
 }
